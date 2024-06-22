@@ -404,3 +404,8 @@ jobs:
 
       #- name: Optimise PDFs
       #  run: go run . optimise
+      
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          path: "**/*.pdf"
